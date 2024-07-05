@@ -6,21 +6,7 @@ MIPinCodeView is a customizable SwiftUI component for creating a PIN code input 
 
 
 
-https://github.com/ibrar110/MIPincodeView/assets/28727450/3f693571-879f-461e-9ae6-929e48c76ef2
-
-
-
-
-https://github.com/ibrar110/MIPincodeView/assets/28727450/5f2d8f1a-a744-4e72-8999-22634b7fc896
-
-
-https://github.com/ibrar110/MIPincodeView/assets/28727450/1d3e08be-23a3-48f9-b8e5-98461fe4d520
-
-
-https://github.com/ibrar110/MIPincodeView/assets/28727450/ddcf9afe-1273-40e3-a8c0-4dbfe2b0a4b0
-
-
-
+https://github.com/ibrar110/MIPincodeView/assets/28727450/672fb610-5568-4f71-a303-5bc54ef330b9
 
 
 
