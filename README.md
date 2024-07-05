@@ -27,7 +27,7 @@ To integrate MIPinCodeView into your project, use the Swift Package Manager:
 
 1. Open your project in Xcode.
 2. Go to `File` > `Add Packages...`.
-3. Enter the repository URL: `https://github.com/ibrar110/MIPincodeView.git`.
+3. Enter the repository URL: `https://github.com/markhoorist/MIPinCodeView.git`.
 4. Select the latest version and add the package to your project.
 
 ### Usage
