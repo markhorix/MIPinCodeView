@@ -3,8 +3,9 @@
 MIPinCodeView is a customizable SwiftUI component for creating a PIN code input view with various styling options. It supports boxed, circle, and underlined styles, as well as secure input, custom colors, and rounded corners.
 
 
-![Demo](https://github.com/ibrar110/MIPinCodeView/assets/28727450/ef73ee6f-9f16-48dd-9623-1fc32f9cdf2a)
 
+
+![Demo](https://github.com/markhoorist/MIPinCodeView/assets/28727450/68ef2c93-8011-44f5-b676-f9ad6a196cb0)
 
 
 
