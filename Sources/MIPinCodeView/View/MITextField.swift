@@ -18,6 +18,7 @@ final class _MITextField: UITextField {
 
 struct MITextField: UIViewRepresentable {
     @Binding var text: String
+    var keyBoardType: UIKeyboardType
     
     class Coordinator: NSObject, UITextFieldDelegate {
         var parent: MITextField
@@ -52,6 +53,7 @@ struct MITextField: UIViewRepresentable {
         textField.text = text
         textField.textColor = .clear
         textField.tintColor = .clear
+        textField.keyboardType = keyBoardType
         return textField
     }
     

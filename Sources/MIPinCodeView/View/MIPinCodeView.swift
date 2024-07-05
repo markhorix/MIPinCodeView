@@ -30,6 +30,7 @@ public enum PinStyle {
 ///   - spacing: The spacing between the pin value. Default is 10.
 ///   - width: The width of each PIN character view. Default is 40.
 ///   - height: The height of each PIN character view. Default is 40.
+///   - keyboardType: The keyboard type for PIN Code View. Default is 'numberPad'.
 public struct MIPinCodeView: View {
     @Binding var pin: String
     var length: Int
@@ -42,6 +43,7 @@ public struct MIPinCodeView: View {
     var pinCharacter: String
     var width: CGFloat
     var height: CGFloat
+    var keyboardType: UIKeyboardType
     
     public init(pin: Binding<String>,
                 length: Int = 4,
@@ -53,7 +55,8 @@ public struct MIPinCodeView: View {
                 cornerRadius: CGFloat = 8,
                 spacing: CGFloat = 10.0,
                 width: CGFloat = 40,
-                height: CGFloat = 40) {
+                height: CGFloat = 40,
+                keyboardType: UIKeyboardType = .numberPad) {
         self._pin = pin
         self.length = length
         self.isSecure = isSecure
@@ -65,6 +68,7 @@ public struct MIPinCodeView: View {
         self.spacing = spacing
         self.width = width
         self.height = height
+        self.keyboardType = keyboardType
     }
     
     public var body: some View {
@@ -78,13 +82,14 @@ public struct MIPinCodeView: View {
             }
             .padding()
             .overlay(
-//                TextField("", text: $pin)
-//                    .foregroundColor(.clear) // Hide the text field's text color
-//                    .accentColor(.clear) // Hide the cursor color
-//                    .limitInputLength(value: $pin, length: length) // Limit input length
+                //                TextField("", text: $pin)
+                //                    .foregroundColor(.clear) // Hide the text field's text color
+                //                    .accentColor(.clear) // Hide the cursor color
+                //                    .limitInputLength(value: $pin, length: length) // Limit input length
                 
-                MITextField(text: $pin)
-                    .foregroundColor(.clear) // Hide the text field's text color
+                MITextField(text: $pin,
+                            keyBoardType: keyboardType)
+                .foregroundColor(.clear) // Hide the text field's text color
                     .accentColor(.clear) // Hide the cursor color
                     .limitInputLength(value: $pin, length: length) // Limit input length
                 
@@ -111,7 +116,7 @@ public struct MIPinCodeView: View {
                     Rectangle()
                         .fill(backgroundColor)
                         .frame(height: 2)
-    
+                    
                 }
             }
             
