@@ -78,7 +78,12 @@ public struct MIPinCodeView: View {
             }
             .padding()
             .overlay(
-                TextField("", text: $pin)
+//                TextField("", text: $pin)
+//                    .foregroundColor(.clear) // Hide the text field's text color
+//                    .accentColor(.clear) // Hide the cursor color
+//                    .limitInputLength(value: $pin, length: length) // Limit input length
+                
+                MITextField(text: $pin)
                     .foregroundColor(.clear) // Hide the text field's text color
                     .accentColor(.clear) // Hide the cursor color
                     .limitInputLength(value: $pin, length: length) // Limit input length
